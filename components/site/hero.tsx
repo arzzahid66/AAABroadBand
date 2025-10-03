@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -11,7 +12,7 @@ export function Hero() {
             <span>PTA Licensed ISP</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-semibold text-pretty">
-            Lightning‑Fast Internet for Homes & Businesses
+            Lightning-Fast Internet for Homes & Businesses
           </h1>
           <p className="opacity-90">Reliable • Affordable • 24/7 Support</p>
           <p className="text-pretty opacity-80">
@@ -27,11 +28,12 @@ export function Hero() {
             </Button>
           </div>
         </div>
-        <div className="rounded-lg border border-border/80 bg-background/10 aspect-video grid place-items-center">
-          <img
-            src="/wifi-signal-graphic.jpg"
-            alt="Wi‑Fi signal illustration"
-            className="w-full h-full object-contain p-8"
+        <div className="rounded-lg border border-border/80 bg-background/10 aspect-video grid place-items-center relative overflow-hidden">
+          <Image
+            src="/how-internet-works-the-network-of-networks.jpg"
+            alt="Wi-Fi signal illustration"
+            fill
+            className="object-cover rounded-lg"
           />
         </div>
       </div>
